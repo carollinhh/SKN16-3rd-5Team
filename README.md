@@ -86,13 +86,14 @@ SKN16-3rd-5Team/
 
 ## 실행 방법
 
+```bash
 git clone https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN16-3rd-5Team.git
 cd SKN16-3rd-5Team
 pip install -r requirements.txt
 
 openaikey.txt에 본인 OpenAI API 키 입력
-Jupyter에서 peurojegteu3_susususususujeong.ipynb 실행
-text
+Jupyter에서 수정바람.ipynb 실행
+```
 
 ---
 
