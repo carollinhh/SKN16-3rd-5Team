@@ -67,7 +67,7 @@ SKN16-3rd-5Team/
 
 ├── pet_insurance_rag/
 ├── asset/ 
-│└── 펫보험들5조.pdf 
+│└── 발표자료_펫보험들5조.pdf 
 ├── config/
 │├── requirements.txt
 │└── settings.py
@@ -131,7 +131,7 @@ Jupyter에서 수정바람.ipynb 실행
 - **보험 chunk 데이터**: `data/`
 - **RAG QA 전체 코드·분석**: `src/rag_functions.py/`
 - **API Key 관리**: `openaikey.txt`
-- **발표자료**: `asset/펫보험들5조.pdf`
+- **발표자료**: `asset/발표자료_펫보험들5조.pdf`
 - **그레이디오(Gradio) 데모**: `src/gradio_interface.py/`
 
 ---
@@ -139,7 +139,7 @@ Jupyter에서 수정바람.ipynb 실행
 ## 프로젝트 결과 및 분석
 
 - 모델·임베딩·검색별 QA 성능, 실질 답변 정확도 및 사용자 피드백 통계
-- 주요 실험 결과/분석 및 시사점은 **발표자료(assets/5조_발표자료.pdf)** 참고
+- 주요 실험 결과/분석 및 시사점은 **발표자료(asset/발표자료_펫보험들5조.pdf)** 참고
 
 ---
 
