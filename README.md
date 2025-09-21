@@ -125,11 +125,11 @@ Jupyter에서 수정바람.ipynb 실행
 
 ## 프로젝트 산출물
 
-- **보험 chunk 데이터**: `data/insurance/`
-- **RAG QA 전체 코드·분석**: `peurojegteu3_susususususujeong.ipynb`
+- **보험 chunk 데이터**: `data/`
+- **RAG QA 전체 코드·분석**: `src/rag_functions.py/`
 - **API Key 관리**: `openaikey.txt`
 - **발표자료**: `assets/5조_발표자료.pdf`
-- **그레이디오(Gradio) 데모**: `assets/screens/`
+- **그레이디오(Gradio) 데모**: `src/gradio_interface.py/`
 
 ---
 
