@@ -78,7 +78,7 @@ pet_insurance_rag/
 └── 📋 .env.template           # 환경 변수 템플릿
 ```
 ---
-## Work Flow
+## 🧭 Work Flow
 <img width="817" height="840" alt="workflow" src="https://github.com/user-attachments/assets/668478b3-8b4a-4a62-b048-330aab6b663b" />
 
 ## 📊 PDF 추출 방식 평가 지표
@@ -96,7 +96,7 @@ pet_insurance_rag/
 
 ---
 
-## 청킹 
+## 🧱 청킹 
 **입력: 보험 약관 원문**
 - 단락 구분(조-항-절 체계 분석), 슬라이딩 윈도우로 의미 단위 분할
 - 각 청크마다 보장/면책/주체/절차 등 보험 실무 특화 키워드 자동 태깅
@@ -107,13 +107,14 @@ pet_insurance_rag/
 
 ---
 
-## 임베딩 모델 비교/선정
+## 🔎 임베딩 모델 비교/선정
 **Query: "사고 치료가 보험기간 말에 걸치면 만료 후 치료도 보상되나요?"**
 <img width="782" height="247" alt="임베딩 모델비교" src="https://github.com/user-attachments/assets/dc6e774a-bce2-46c2-94d0-724983835868" />
+
 **OPEN AI 임베딩 모델 선택**
 
 ---
-## 리랭크 모델 비교/선정
+## 🔁 리랭크 모델 비교/선정
 |모델 이름| 강점 |적합한 케이스|
 | ------ | ------------------|----------------- |
 |BAAI/bge-reranker-v2-m3| 검색/RAG 정확도 최상급|RAG 파이프라인, 보험·법률 FAQ, 정확도가 중요한 서비스|
@@ -134,13 +135,13 @@ openaikey.txt에 본인 OpenAI API 키 입력
 Jupyter에서 수정바람.ipynb 실행
 ```
 ---
-## LangGraph
+## 🧠 LangGraph
 <img width="831" height="1421" alt="langgraph3" src="https://github.com/user-attachments/assets/5122b707-a419-4115-8d02-40d07d20cac4" />
 
 
 ---
 
-## 주요 기능 및 시스템 구성
+## 🔍 주요 기능 및 시스템 구성
 
 - **데이터 전처리**: 기관별 chunk 취합/벡터 DB 구축(FAISS, BM25, Chroma 등 지원)
 - **RAG QA**: LangChain + OpenAI API + 임베딩/검색 실험 구조
@@ -148,7 +149,7 @@ Jupyter에서 수정바람.ipynb 실행
 - **정량 평가/시각화**: Hit Rate, MRR, 사용자 피드백 분석
 
 ---
-## 프로젝트 산출물
+## 📦 프로젝트 산출물
 
 - **보험 chunk 데이터**: `data/`
 - **RAG QA 전체 코드·분석**: `src/rag_functions.py/`
@@ -157,7 +158,7 @@ Jupyter에서 수정바람.ipynb 실행
 - **그레이디오(Gradio) 데모**: `src/gradio_interface.py/`
   
 ---
-## 질문/답변
+## 💬 질문/답변
 ### 1. 보험사 선택
 <img width="497" height="420" alt="질문1" src="https://github.com/user-attachments/assets/c779f2e4-6d31-4fe5-b4be-901fa434947b" />
 
@@ -182,23 +183,23 @@ Q: 자동차 보험에 대해 보상은 어떻게 받을 수 있어?
 A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습니다. 펫보험 약관에 해당 관련 정보가 없습니다
 
 ---
-## 프로젝트 결과 및 분석
+## 🎯 프로젝트 결과 및 분석
 
 - 모델·임베딩·검색별 QA 성능, 실질 답변 정확도 및 사용자 피드백 통계
 - 주요 실험 결과/분석 및 시사점은 **발표자료(assets/5조_발표자료.pdf)** 참고
 
 ---
-## 시사점
+## 🧭 시사점
 - Retriever & GPT API로 RAG 구축 -> 사용자 필요에 **알맞은 응답 제공**
 - LangChain 활용 -> **캡슐, 모듈화** 통해 WorkFlow 최적화와 보안 강점
 - 사용자 피드백 & 시스템 평가 기능을 통해 사용자, GPT의 **수치적, 정성적 피드백 자료 제공** -> 서비스 이용자 뿐만 아니라 서비스 제공자인 보험 도메인 종사자에게도 **실효성 기대**
 
 ---
-## 요약/추천
+## 💬 요약/추천
 <img width="1047" height="460" alt="요약" src="https://github.com/user-attachments/assets/795ec2bd-9c00-4b33-afa5-fd3d477d7742" />
 
 ---
-## 답변
+## 📝 답변
 
 <img width="575" height="293" alt="답변1" src="https://github.com/user-attachments/assets/39c0d2ce-a562-47c0-8a64-5d599e4ad5ab" />
 
@@ -211,7 +212,7 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 <img width="1426" height="250" alt="답변4" src="https://github.com/user-attachments/assets/f38ec4d3-4512-49f8-949b-ad86e96af3b1" />
 
 ---
-## 성능 대시보드
+## 📈 성능 대시보드
 
 <img width="612" height="481" alt="성능대시보드1" src="https://github.com/user-attachments/assets/aceeca97-9656-4262-9aa9-50a21df49f41" />
 
@@ -221,7 +222,7 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 
 ---
 
-## 품질 평가
+## 🔬 품질 평가
 
 <img width="935" height="437" alt="품질평가2" src="https://github.com/user-attachments/assets/633e4b45-6be3-447d-a4fb-2a844ad8569b" />
 
@@ -231,7 +232,7 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 
 ---
 
-## AB 테스트
+## 🖥️ AB 테스트
 
 <img width="1552" height="385" alt="ab테스트2" src="https://github.com/user-attachments/assets/d0504b68-510b-42d6-967c-0060e5eb6551" />
 
@@ -240,7 +241,7 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 서로 다른 설정의 RAG 시스템 성능 비교 -> **AB테스트**
 
 ---
-## 한계점 및 발전방향
+## 🧩 한계점 및 발전방향
 
 **한계**
 - 보험사 자료 불균형·약관 chunk 품질
@@ -260,7 +261,7 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 
 ---
 
-## 프로젝트 회고
+## 📝 프로젝트 회고
 | 이름   | 한마디 회고/성장포인트                |
 | ------ | ----------------------------------- |
 | 차하경 |이번 프로젝트에서는 복잡한 보험 약관 데이터를 RAG 시스템에 적용하며, 텍스트 전처리와 임베딩·검색 기법의 차이가 결과에 큰 영향을 미친다는 점을 체감했습니다. 초반에는 데이터의 불균형과 난해한 용어 때문에 어려움이 있었지만, 팀원들과 함께 다양한 모델과 벡터 DB를 실험하며 문제를 해결할 수 있었습니다. 그 과정에서 단순히 기능 구현을 넘어서, 실제 도메인 데이터를 활용할 때 고려해야 할 요소와 RAG의 장단점을 깊이 이해하게 되었습니다. 무엇보다 협업 속에서 각자의 강점을 발휘하며 성장할 수 있었던 경험이 가장 큰 성과였습니다.|
@@ -270,7 +271,7 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 | 문승현 |                                     |
 
 ---
-## 기술스택
+## 🛠️ 기술스택
 
 <p>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
