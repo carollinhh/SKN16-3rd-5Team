@@ -64,16 +64,33 @@
 ## 폴더 및 파일 구조
 
 SKN16-3rd-5Team/
-├── data/
-│ └── insurance/ # 보험 chunk 데이터 (CSV)
-├── peurojegteu3_susususususujeong.ipynb # 전체 분석 및 RAG QA 코드 노트북
-├── requirements.txt
-├── openaikey.txt
-├── assets/
-│ ├── 5조_발표자료.pdf # 최종 발표자료
-│ └── screens/ # Gradio 데모 UI 스크린샷(선택)
+├── pet_insurance_rag/ 
+│├── config/
+│├── requirements.txt
+│└── settings.py
+├── data/ 
+│├──DB손해보험_다이렉트_펫블리_반려견보험.csv
+│├── KBdirect_금쪽같은_펫보험.csv
+│├── meritz_펫퍼민트.csv
+│├── 삼성화재_반려견보험_애니펫.csv
+│├── 삼성화재_위풍댕댕.csv
+│├── 삼성화재_착한펫보험.csv
+│├── 하나펫사랑보험.csv
+│└── 현대해상_굿앤굿우리펫보험.csv
+├── src/ 
+│├── data_processing.py
+│├── evaluation.py
+│├── gradio_interface.py
+│└── rag_functions.py
+├── tests/ 
+│└── test_basic.py
+├── .env.template
+├── .gitignore
+├── main.py
+├── run.bat
 
-- 주요 코드는 `peurojegteu3_susususususujeong.ipynb`에서 실행
+
+- 주요 코드는 `main.py`에서 실행
 
 ---
 
