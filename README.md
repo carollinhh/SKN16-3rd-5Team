@@ -1,62 +1,33 @@
-# SKN16-3rd-5Team
 # 펫보험 들5조 - 펫 보험 Q&A 챗봇 서비스
 
-**SK 네트웍스 Family AI 캠프 16기 3차 단위프로젝트 · 펫보험 약관 RAG 기반 QA 시스템**
 **SK 네트웍스 Family AI 캠프 16기 3차 단위프로젝트**  
 📌 펫보험 약관 RAG 기반 QA 시스템
 
 ---
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)](https://jupyter.org/)
-[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
-[![LangChain](https://img.shields.io/badge/LangChain-%230073b3?style=for-the-badge&logoColor=white)](https://www.langchain.com/)
-[![FAISS](https://img.shields.io/badge/FAISS-0052CC?style=for-the-badge&logoColor=white)](https://github.com/facebookresearch/faiss)
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-9955BB?style=for-the-badge&logoColor=white)](https://docs.trychroma.com/)
-[![Gradio](https://img.shields.io/badge/Gradio-171515?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app/)
-
----
-
-## 🗂️ 목차
-- [팀 소개](#팀-소개)
-- [프로젝트 개요](#프로젝트-개요)
-- [주제 선정 배경](#주제-선정-배경)
-- [폴더 및 파일 구조](#폴더-및-파일-구조)
-- [데이터 설명](#데이터-설명)
-- [실행 방법](#실행-방법)
-- [주요 기능 및 시스템 구성](#주요-기능-및-시스템-구성)
-- [프로젝트 산출물](#프로젝트-산출물)
-- [프로젝트 결과 및 분석](#프로젝트-결과-및-분석)
-- [한계점 및 발전방향](#한계점-및-발전방향)
-- [프로젝트 회고](#프로젝트-회고)
-
----
-
-## 팀 소개
 ## 👥 팀 소개
 
 <table>
 <thead>
-@@ -46,65 +21,112 @@
+<tr>
+<td align="center"><img src="https://i.namu.wiki/i/yBUlarXaiOUlHnIDDEAtvqGIn_gl9auAY0UB6kzsFd3hjLyUAe_le8z_rUI7DLVxJIp7jHThGGtpQJpGCHfkig.webp" width="110"/><br><b>차하경</b><br><span style="font-size:13px">팀장<br>도메인 분석<br>pdf 추출 모델 비교/분석<br>RAG WorkFlow 설계</span></td>
+<td align="center"><img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba-fan/images/4/41/Shinobu_anime_design.png/revision/latest?cb=20201006000955" width="110"/><br><b>황하영</b><br><span style="font-size:13px">임베딩 모델 분석<br>모델 테스트<br>최종 보고서 작성</span></td>
+<td align="center"><img src="https://i.namu.wiki/i/HbTvNAaTQDJeZgmH8UyOgd9HF2bQ30jgy2gHhmOSqwNphDCS4g3Nw6MO3OTMi84jmwylrle1vpYzJi-xIvu8lg.webp" width="110"/><br><b>진세현</b><br><span style="font-size:13px">도메인 분석<br>초기 모델 테스트<br>최종 보고서 작성</span></td>
+<td align="center"><img src="https://i.namu.wiki/i/VcDyzxOl21BA37mCQjUv5B3AeWmSyoWKHbTRfemqLkx3OY67uQdAfX_4F8r11Z21hAcT1ssgTouWQ8Z9vvlXHw.webp" width="110"/><br><b>김나은</b><br><span style="font-size:13px">임베딩 모델 분석<br>모델 테스트<br>최종 보고서 작성</span></td>
+<td align="center"><img src="https://avatars.githubusercontent.com/u/190079140?v=4" width="110"/><br><b>문승현</b><br><span style="font-size:13px">프로젝트 기획<br>DB 설계<br>RAG 모델링</span></td>
+</tr>
+</thead>
+</table>
 
 ---
-
-## 프로젝트 개요
 ## 📘 프로젝트 개요
 
 본 프로젝트는 펫보험 약관 데이터에 대해 **LangChain + OpenAI API** 기반 RAG QA 시스템을 구현한 사례입니다. 
 
-여러 펫보험사별 약관/상품 데이터를 대상으로 검색·추론(QA)이 결합된 RAG(Retrieval Augmented Generation) 기반 QA 시스템을 구축합니다.  
-다양한 모델 및 검색 방법을 실험·비교하여 소비자 접근성 촉진과 산업의 데이터 활용 혁신을 지원합니다.
 다양한 임베딩 모델(Sentence-BERT, KoSBERT 등)과 검색 기법(FAISS, Chroma, BM25)을 적용하여, 보험 약관 질의에 대한 정확도 및 응답 품질을 정량 평가(Hit Rate, MRR)와 사용자 피드백을 통해 검증했습니다.  
 
 Gradio 기반 UI 데모를 통해 실시간 Q&A 서비스를 제공하며, 산업 데이터 활용 가능성을 실험했습니다.
 
 ---
-
-## 주제 선정 배경
-
 ## 🎯 주제 선정 배경
 
 |<img src="https://onimg.nate.com/orgImg/ed/2017/11/16/PS17111600045.jpg" width="240">|<img src="https://thumb.mt.co.kr/06/2024/03/2024031114052219364_1.jpg" width="300">|
@@ -68,7 +39,6 @@ Gradio 기반 UI 데모를 통해 실시간 Q&A 서비스를 제공하며, 산�
 ---
 ## ⭐ 주요 기능
 
-## 폴더 및 파일 구조
 | 기능 | 설명 |
 |------|------|
 | 🤖 **이중 AI 에이전트** | QA 에이전트 + 요약 에이전트로 정확한 답변 |
@@ -77,36 +47,10 @@ Gradio 기반 UI 데모를 통해 실시간 Q&A 서비스를 제공하며, 산�
 | 🔍 **출처 표시** | 참조 약관과 페이지 번호 명시 |
 | 📈 **성능 모니터링** | A/B 테스트 및 실시간 지표 추적 |
 
-SKN16-3rd-5Team/
+
 ---
 ## 📁 프로젝트 구조
 
-├── pet_insurance_rag/
-├── asset/ 
-│└── 발표자료_펫보험들5조.pdf 
-├── config/
-│├── requirements.txt
-│└── settings.py
-├── data/ 
-│├──DB손해보험_다이렉트_펫블리_반려견보험.csv
-│├── KBdirect_금쪽같은_펫보험.csv
-│├── meritz_펫퍼민트.csv
-│├── 삼성화재_반려견보험_애니펫.csv
-│├── 삼성화재_위풍댕댕.csv
-│├── 삼성화재_착한펫보험.csv
-│├── 하나펫사랑보험.csv
-│└── 현대해상_굿앤굿우리펫보험.csv
-├── src/ 
-│├── data_processing.py
-│├── evaluation.py
-│├── gradio_interface.py
-│└── rag_functions.py
-├── tests/ 
-│└── test_basic.py
-├── .env.template
-├── .gitignore
-├── main.py
-├── run.bat
 ```
 pet_insurance_rag/
 ├── 🚀 main.py                 # 실행 파일
@@ -140,7 +84,6 @@ pet_insurance_rag/
 ## 📊 PDF 추출 방식 평가 지표
 <img width="1297" height="237" alt="pdf추출방식" src="https://github.com/user-attachments/assets/7206cb98-4ad0-4b34-9f8b-7acfb8a3b7fb" />
 
-- 주요 코드는 `main.py`에서 실행
 | 커버리지(한글+숫자)|원본의 한글, 숫자가 얼마나 살아 남았는지(빠짐 여부)|
 | ------ | ----------------------------------- |
 | **CER 전체** | **전체 문자 기준의 오탈, 변형률**|
@@ -153,7 +96,6 @@ pet_insurance_rag/
 
 ---
 
-## 데이터 설명
 ## 청킹 
 **입력: 보험 약관 원문**
 - 단락 구분(조-항-절 체계 분석), 슬라이딩 윈도우로 의미 단위 분할
@@ -165,8 +107,6 @@ pet_insurance_rag/
 
 ---
 
-- **chunk 기반 보험 약관 데이터(CSV)**: 사별로 chunk/페이지/카테고리 등 메타 정보 포함
-- 다양한 보험사 데이터 통합·정제 후 벡터DB/RAG QA에 사용
 ## 임베딩 모델 비교/선정
 **Query: "사고 치료가 보험기간 말에 걸치면 만료 후 치료도 보상되나요?"**
 <img width="782" height="247" alt="임베딩 모델비교" src="https://github.com/user-attachments/assets/dc6e774a-bce2-46c2-94d0-724983835868" />
@@ -180,7 +120,6 @@ pet_insurance_rag/
 |mixedbread-ai/mxbai-rerank-base-v1|범용성, 다양한 태스크|FAQ 매칭, 추천, 다국어 서비스, 빠른 실험|
 |jinaai/jina-reranker-v2-base-multilingual|속도-성능 밸런스|실시간 검색/추천, 프로덕션 서비스|
 
-## 실행 방법
 **BAAI/bge-reranker-v2-m3 Rerank 모델 선정**
 
 ---
@@ -188,7 +127,9 @@ pet_insurance_rag/
 
 ```bash
 git clone https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN16-3rd-5Team.git
-@@ -114,6 +136,9 @@ pip install -r requirements.txt
+cd SKN16-3rd-5Team
+pip install -r requirements.txt
+
 openaikey.txt에 본인 OpenAI API 키 입력
 Jupyter에서 수정바람.ipynb 실행
 ```
@@ -196,16 +137,25 @@ Jupyter에서 수정바람.ipynb 실행
 ## LangGraph
 <img width="831" height="1421" alt="langgraph3" src="https://github.com/user-attachments/assets/5122b707-a419-4115-8d02-40d07d20cac4" />
 
+
 ---
 
-@@ -131,26 +156,106 @@ Jupyter에서 수정바람.ipynb 실행
+## 주요 기능 및 시스템 구성
+
+- **데이터 전처리**: 기관별 chunk 취합/벡터 DB 구축(FAISS, BM25, Chroma 등 지원)
+- **RAG QA**: LangChain + OpenAI API + 임베딩/검색 실험 구조
+- **UI·데모**: Gradio 실시간 Q&A 챗봇, 피드백 대시보드(선택)
+- **정량 평가/시각화**: Hit Rate, MRR, 사용자 피드백 분석
+
+---
+## 프로젝트 산출물
+
 - **보험 chunk 데이터**: `data/`
 - **RAG QA 전체 코드·분석**: `src/rag_functions.py/`
 - **API Key 관리**: `openaikey.txt`
-- **발표자료**: `asset/발표자료_펫보험들5조.pdf`
 - **발표자료**: `assets/5조_발표자료.pdf`
 - **그레이디오(Gradio) 데모**: `src/gradio_interface.py/`
-
+  
 ---
 ## 질문/답변
 ### 1. 보험사 선택
@@ -235,7 +185,6 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 ## 프로젝트 결과 및 분석
 
 - 모델·임베딩·검색별 QA 성능, 실질 답변 정확도 및 사용자 피드백 통계
-- 주요 실험 결과/분석 및 시사점은 **발표자료(asset/발표자료_펫보험들5조.pdf)** 참고
 - 주요 실험 결과/분석 및 시사점은 **발표자료(assets/5조_발표자료.pdf)** 참고
 
 ---
@@ -280,6 +229,7 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 
 저장된 테스트 쿼리 랜덤 질의응답(회사 별) -> **GPT 평가**
 
+---
 
 ## AB 테스트
 
@@ -307,12 +257,34 @@ A: 이 질문은 펫보험 약관 범위 밖의 주제여서 답변하지 않습
 
 **기대 효과**
 - 자동화된 약관 Q&A, 소비자 정보격차 해소, 산업 내 데이터 기반 혁신 지원
-@@ -161,7 +266,7 @@ Jupyter에서 수정바람.ipynb 실행
 
+---
+
+## 프로젝트 회고
 | 이름   | 한마디 회고/성장포인트                |
 | ------ | ----------------------------------- |
-| 차하경 |                                     |
+
 | 차하경 |이번 프로젝트에서는 복잡한 보험 약관 데이터를 RAG 시스템에 적용하며, 텍스트 전처리와 임베딩·검색 기법의 차이가 결과에 큰 영향을 미친다는 점을 체감했습니다. 초반에는 데이터의 불균형과 난해한 용어 때문에 어려움이 있었지만, 팀원들과 함께 다양한 모델과 벡터 DB를 실험하며 문제를 해결할 수 있었습니다. 그 과정에서 단순히 기능 구현을 넘어서, 실제 도메인 데이터를 활용할 때 고려해야 할 요소와 RAG의 장단점을 깊이 이해하게 되었습니다. 무엇보다 협업 속에서 각자의 강점을 발휘하며 성장할 수 있었던 경험이 가장 큰 성과였습니다.|
+| 문승현 |                                     |
 | 황하영 |                                     |
 | 진세현 |                                     |
 | 김나은 |                                     |
+
+---
+## 기술스택
+
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangChain-0073b3?style=flat-square&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FAISS-0052CC?style=flat-square&logoColor=white"/>
+  <img src="https://img.shields.io/badge/ChromaDB-9955BB?style=flat-square&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gradio-171515?style=flat-square&logo=gradio&logoColor=white"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/numpy-013243?style=flat-square&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/tqdm-FFC107?style=flat-square&logoColor=white"/>
+</p>
+
+---
