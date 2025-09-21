@@ -64,8 +64,11 @@
 ## 폴더 및 파일 구조
 
 SKN16-3rd-5Team/
-├── pet_insurance_rag/ 
-│├── config/
+
+├── pet_insurance_rag/
+├── asset/ 
+│└── 펫보험들5조.pdf 
+├── config/
 │├── requirements.txt
 │└── settings.py
 ├── data/ 
