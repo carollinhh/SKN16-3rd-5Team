@@ -9,7 +9,7 @@
 <table>
 <thead>
 <tr>
-<td align="center"><img src="https://i.namu.wiki/i/yBUlarXaiOUlHnIDDEAtvqGIn_gl9auAY0UB6kzsFd3hjLyUAe_le8z_rUI7DLVxJIp7jHThGGtpQJpGCHfkig.webp" width="110"/><br><b>차하경</b><br><span style="font-size:13px">팀장<br>도메인 분석<br>pdf 추출 모델 비교/분석<br>RAG WorkFlow 설계</span></td>
+<td align="center"><img src="https://i.namu.wiki/i/yBUlarXaiOUlHnIDDEAtvqGIn_gl9auAY0UB6kzsFd3hjLyUAe_le8z_rUI7DLVxJIp7jHThGGtpQJpGCHfkig.webp" width="110"/><br><b>차하경</b><br><span style="font-size:13px">팀장<br>도메인 분석<br>pdf 추출 모델 비교/분석<br>RAG WorkFlow 설계 및 모델링</span></td>
 <td align="center"><img src="https://static.wikia.nocookie.net/kimetsu-no-yaiba-fan/images/4/41/Shinobu_anime_design.png/revision/latest?cb=20201006000955" width="110"/><br><b>황하영</b><br><span style="font-size:13px">임베딩 모델 분석<br>모델 테스트<br>최종 보고서 작성</span></td>
 <td align="center"><img src="https://i.namu.wiki/i/HbTvNAaTQDJeZgmH8UyOgd9HF2bQ30jgy2gHhmOSqwNphDCS4g3Nw6MO3OTMi84jmwylrle1vpYzJi-xIvu8lg.webp" width="110"/><br><b>진세현</b><br><span style="font-size:13px">도메인 분석<br>초기 모델 테스트<br>최종 보고서 작성</span></td>
 <td align="center"><img src="https://i.namu.wiki/i/VcDyzxOl21BA37mCQjUv5B3AeWmSyoWKHbTRfemqLkx3OY67uQdAfX_4F8r11Z21hAcT1ssgTouWQ8Z9vvlXHw.webp" width="110"/><br><b>김나은</b><br><span style="font-size:13px">임베딩 모델 분석<br>모델 테스트<br>최종 보고서 작성</span></td>
